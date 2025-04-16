@@ -44,7 +44,7 @@ const ManageOrders = () => {
         console.log(deliverystatus)
         console.log(item)
         try {
-            const response = await fetch(`http://localhost:6001/order/${item._id}`, {
+            const response = await fetch(`https://fnf-server-cplg.onrender.com/order/${item._id}`, {
                 method: "PUT",
         headers: {
           "Content-Type": "application/json",
