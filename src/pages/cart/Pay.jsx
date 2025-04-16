@@ -14,7 +14,7 @@ const Pay = ({cart}) => {
    const handleCheckout = async () => {
     try {
       // console.log(cart)
-   const response = await axios.post('http://localhost:6001/stripe/create-checkout-session', {
+   const response = await axios.post('https://fnf-server-cplg.onrender.com/stripe/create-checkout-session', {
         cart,
         
         userId: user?.uid,
