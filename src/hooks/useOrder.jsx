@@ -8,7 +8,7 @@ const useOrder = () => {
     const { refetch ,data: order = []} = useQuery({
         queryKey: ['orders', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:6001/order?email=${user?.email}`, {
+            const res = await fetch(`https://fnf-server-cplg.onrender.com/order?email=${user?.email}`, {
               headers:{
                 authorization: `Bearer ${token}`
               }
