@@ -27,7 +27,7 @@ const Cards = ({ item }) => {
         if(user && user?.email) {
             const cartItem = {menuItemId: _id, name, recipe, category, quantity: 1, image, price, email: user.email};
             console.log(cartItem);
-            axios.post("http://localhost:6001/carts", cartItem).then(response => {
+            axios.post("https://fnf-server-cplg.onrender.com/carts", cartItem).then(response => {
                 // console.log(response); 
                 if(response){
                     Swal.fire({
