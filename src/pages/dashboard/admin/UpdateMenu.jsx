@@ -87,7 +87,7 @@ const UpdateMenu =  () => {
               outOfStock: outOfStock
             };
             // console.log(menuItem)
-            const postMenuItem = await axiosSecure.patch(`http://localhost:6001/menu/${item._id}`, menuItem);
+            const postMenuItem = await axiosSecure.patch(`https://fnf-server-cplg.onrender.com/menu/${item._id}`, menuItem);
             console.log(postMenuItem)
             if(postMenuItem.status === 200){
                 reset()
