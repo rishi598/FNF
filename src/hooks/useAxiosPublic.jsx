@@ -4,7 +4,7 @@ import React from 'react'
 
 
 const axiosPublic =  axios.create({
-    baseURL: 'http://localhost:6001',
+    baseURL: 'https://fnf-server-cplg.onrender.com/',
   })
 
 const useAxiosPublic = () => {
