@@ -11,7 +11,7 @@ const OrderTracking = () => {
   const { refetch ,data: order = []} = useQuery({
     queryKey: ['order', id],
     queryFn: async () => {
-        const res = await fetch(`http://localhost:6001/order/${id}`, {
+        const res = await fetch(`https://fnf-server-cplg.onrender.com/order/${id}`, {
           method: "GET",
           headers:{
             authorization: `Bearer ${token}`
